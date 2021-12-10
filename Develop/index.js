@@ -82,7 +82,7 @@ const questions = () => {
             type: 'checkbox',
             name: 'license',
             message: 'Choose your License type',
-            choices: ["MIT", "GPLv3", "GPL", "None"],
+            choices: ["MIT", "GPLv3", "GPL"],
             when: ({ confirmLicense }) => confirmLicense,
         },
 

@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const license = ["MIT", "GPLv3", "GPL", "None"]
+const i = ["MIT", "GPLv3", "GPL"]
 
 //function renderLicenseBadge(license){
   //const yourLicense = ''
@@ -21,18 +21,15 @@ function renderLicenseLink(license) {}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 // create the about section
-function renderLicenseSection(license) {
-  const confirmLicense = (true, false);
-    if (!confirmLicense) {
-      return '';
-    }
-    return `
-    ## License
-        
-    ${data.license}
-    
-      `;
-};
+function renderLicenseSection(confirmLicense, license) {
+  if (!confirmLicense) {
+      return "";
+  }
+  return `
+## License
+${license }
+  `;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -68,7 +65,7 @@ ${data.usage}
 ${data.contribution}
 
 
-${renderLicenseSection(license)}
+${ renderLicenseSection(data.confirmLicense, data.license) }
 
 
 ## Test
