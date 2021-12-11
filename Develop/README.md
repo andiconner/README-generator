@@ -1,9 +1,9 @@
 
-# d
+# TEST 2
 
 ## Description 
 
-d
+License MIT example
 
 
 ## Table of Contents (Optional)
@@ -18,26 +18,28 @@ d
 
 ## Installation
 
-d
+lorem
 
 ## Usage 
 
-d
- 
+lorem ipsum
 
 ## Contributing
 
-d
+lorem ipsum
 
 
+## License
+![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)</br>
+<a href="https://opensource.org/licenses/MIT">MIT website</a>
 
 
 
 ## Test
 
-d
+lorem ipsum
 
 ## Questions
-If you have any questions about the repo, please send an email to d. You can find more of my work at d
+If you have any questions about the repo, please send an email to andiconner@icloud.com. You can find more of my work at https://github.com/andiconner
 
 

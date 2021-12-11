@@ -1,34 +1,44 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const i = ["MIT", "GPLv3", "GPL"]
+const license = ["MIT", "GPLv3", "GPL"]
 
-//function renderLicenseBadge(license){
-  //const yourLicense = ''
-  //if(license === 'MIT') {
-    //yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-  //} else if (license === 'GPLv3') {
-    //yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
- // } else if (license === 'GPL') {
-   // yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
-  //} 
-  //return yourLicense;
-//};
+function renderLicenseBadge(confirmLicense, license){
+  if (!confirmLicense) {
+    return "";
+  }else if(license == 'MIT') {
+  return `![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  } else if (license == 'GPLv3') {
+  return `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  } else if (license == 'GPL') {
+  return `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
+  } 
+  
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(confirmLicense, license) {
+    if (!confirmLicense) {
+        return "";
+    }else if (license == 'MIT') {
+    return `<a href="https://opensource.org/licenses/MIT">MIT website</a>`;
+    }else if (license == 'GPLv3') {
+    return `<a href="https://gplv3.fsf.org/">GPLv3 website</a>`;
+    }else if (license == 'GPL') {
+      return `<a href="https://opensource.org/licenses/gpl-license">GPL website</a>`;
+      }else {
+        return license;
+      }
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// create the about section
+// create the license section
 function renderLicenseSection(confirmLicense, license) {
   if (!confirmLicense) {
       return "";
   }
-  return `
-## License
-${license }
-  `;
+  return `## License`;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -58,7 +68,6 @@ ${data.installation}
 ## Usage 
 
 ${data.usage}
- 
 
 ## Contributing
 
@@ -66,6 +75,9 @@ ${data.contribution}
 
 
 ${ renderLicenseSection(data.confirmLicense, data.license) }
+${ renderLicenseBadge(data.confirmLicense, data.license)}</br>
+${ renderLicenseLink(data.confirmLicense, data.license) }
+
 
 
 ## Test
