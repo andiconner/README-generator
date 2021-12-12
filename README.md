@@ -22,7 +22,10 @@ When creating an open source project on GitHub, it’s important to have a high-
 -	On the terminal command-line type “node index” to start the app
 -	Answer the questions prompted on the command-line
 
-_img/prompted_questions.png
+
+Try this markdown:
+
+![prompt questions](https://github.com/andiconner/README-generator/blob/develop/_img/prompted_questions.png?raw=true)
 
 -	Great job! You will have a professional README file created when finished answering the questions!
 
@@ -45,10 +48,10 @@ You can quickly and easily generate a README file by using a command-line applic
 ## Test
 
 You can test the application on answering “NO” to a license, as shown below:
-_img/test_NO_license.png
+![test_NO_license](https://github.com/andiconner/README-generator/blob/develop/_img/test_NO_license.png?raw=true)
 
 You can test the application on answering “YES” to a license, as shown below:
-_img/test_license.png
+![test_NO_license](https://github.com/andiconner/README-generator/blob/develop/_img/test_license.png?raw=true)
 
 ## Questions
 If you have any questions about the repo, please send an email to andiconner@icloud.com. You can find more of my work at https://github.com/andiconner
