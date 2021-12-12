@@ -54,5 +54,3 @@ _img/test_license.png
 If you have any questions about the repo, please send an email to andiconner@icloud.com. You can find more of my work at https://github.com/andiconner
 
 
-
-
