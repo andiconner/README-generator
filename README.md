@@ -22,7 +22,10 @@ When creating an open source project on GitHub, it’s important to have a high-
 -	On the terminal command-line type “node index” to start the app
 -	Answer the questions prompted on the command-line
 
-https://github.com/andiconner/README-generator/blob/develop/_img/prompted_questions.png?raw=true
+
+Try this markdown:
+
+![prompt questions](https://github.com/andiconner/README-generator/blob/develop/_img/prompted_questions.png?raw=true)
 
 -	Great job! You will have a professional README file created when finished answering the questions!
 
